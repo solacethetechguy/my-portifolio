@@ -22,7 +22,6 @@ html{
     top: 0;
     left: 0;
     z-index: 100;
-    transition: all 0.5s ease-in-out;
 }
 
 .navbar.scrolled::before {
@@ -37,6 +36,7 @@ html{
     border: 0.0625rem solid rgba(255, 255, 255, 0.1);
     border-radius: 3rem;
     z-index: -1;
+    transition: all 1.5s ease-in-out;
 }
 
 .navbar ul {
@@ -47,29 +47,37 @@ html{
     
 }
 
-.navbar a{
+.nav-links a{
     text-decoration:none;
     color: black;
     font-family: montserrat;
     font-weight: 500;
     font-size: 1rem;
+    /* transition: color 0.5s ease-in-out; */
+}
+
+.nav-links a.scrolled{
+     transition: color 0.5s ease-in-out;
+    color: #ebe7e2;
 }
 
 .cta-button{
     display: inline-block;
-    padding-left: 2rem;  
+    text-decoration: none;
+    padding-left: 2rem; 
+    padding-top: 0.2rem; 
     background-color: black; 
     width: 9rem; 
     height: 2.7rem;
     border-radius: 1.35rem;
     font-size: 1rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 }
 
 .cta-button:hover{
     transform: translateX(0.5rem);
     background-color: #F3F1EF;
-    border: 0.1rem solid black;
+    border: 0.0625rem solid black;
 }
 
 .cta-button span{
@@ -259,3 +267,4 @@ html{
     right: 0.8rem;
     font-size: 0.5rem;
 }
+
